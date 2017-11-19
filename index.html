@@ -1,16 +1,211 @@
+<!DOCTYPE html>
 <html lang = "en">
+	
 	<head>
 		<meta charset = "utf-8">
 		<title>Tiny Tater Adventures</title>
 		<link rel = "icon" href = "favicon/favicon.ico">
-		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<meta author = "Team Pearodí">
+		<link href = "https://fonts.googleapis.com/css?family=Raleway" rel = "stylesheet">
+        <link href = "font-awesome/css/font-awesome.min.css" rel = "stylesheet">
+        <link href = "css/main.css" rel = "stylesheet">
 		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src = "js/custom.js"></script>
 	</head>
+	
 	<body>
-		<h1>Tiny Tater Adventures</h1>
-		<h2>A Game Developed by Team Pearodí<h2>
-		<img src="img/web-banner-with-text.png"/>
+		<!-- Navbar -->
+		<nav class = "navbar navbar-default">
+			<div class = "container">
+				<div class = "navbar-header">
+					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapsable">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</button>
+				</div>
+
+				<div class = "collapse navbar-collapse navbar-collapsable">
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a href = "#home" class="clickedHome">Home</a></li>
+						<li><a href = "#download" class="clickDownload">Download</a></li>
+						<li><a href = "#story" class="clickedStory">Story</a></li>
+						<li><a href = "#features" class="clickedFeatures">Features</a></li>
+						<li><a href = "#faq" class="clickedFAQs">FAQs</a></li>
+						<li><a href = "#whoweare" class = "clickWhoWeAre">Who We Are</a></li>
+						<li><a href = "#support" class="clickedSupport">Support</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class = "jumbotron" id = "home"></div>
+		
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "download">
+					<h2>How to Download</h2>
+				</div>
+			</section>
+		</div>
+	
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "reviews">
+					<h2>Reviews</h2>
+				</div>
+				<div class = "row">
+					<div class = "col-sm-4">
+						<blockquote>
+							<p>Tiny Tater Adventures is a masterpiece! The artwork is breathtaking.</p>
+							<footer>John Doe</footer>
+						</blockquote>
+					</div>
+					<div class = "col-sm-4">
+						<blockquote>
+							<p>Finally! A game that is dedicated to potatoes and their feelings!</p>
+							<footer>Frank Smith</footer>
+						</blockquote>
+					</div>
+					<div class = "col-sm-4">
+						<blockquote>
+							<p>Brilliant! Just brilliant!</p>
+							<footer>Sarah Jones</footer>
+						</blockquote>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<hr>
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "story">
+					<h2>Story</h2>
+				</div>
+				<div class = "row">
+					<div class = "col-sm-7">
+						<h3>This is the heading.</h3>
+						<p>This is the paragraph.</p>
+					</div>
+					<div class = "col-sm-5">
+						<img src = "img/story.jpg" class = "img-responsive" alt = "Story Cutscene Image">
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<hr>
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "features">
+					<h2>Features</h2>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4">
+						<div class = "panel panel-default text-center">
+							<div class = "panel-body">
+								<span class = "glyphicon glyphicon-ok"></span>
+								<h4>This is the heading.</h4>
+								<p>This is the paragraph.</p>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4">
+						<div class = "panel panel-default text-center">
+							<div class = "panel-body">
+								<span class = "glyphicon glyphicon-ok"></span>
+								<h4>This is the heading.</h4>
+								<p>This is the paragraph.</p>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4">
+						<div class = "panel panel-default text-center">
+							<div class = "panel-body">
+								<span class = "glyphicon glyphicon-ok"></span>
+								<h4>This is the heading.</h4>
+								<p>This is the paragraph.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "faq">
+					<h2>FAQs</h2>
+				</div>
+				<div class = "panel-group" id = "accordion">
+					<div class = "panel panel-default">
+						<div class = "panel-heading">
+							<div class = "panel-title">
+								<a href = "#collapse-1" data-toggle = "collapse" data-parent = "#accordion">Question 1</a>
+							</div>
+							<div id = "collapse-1" class = "panel-collapse collapse in">
+								<div class = "panel-body">
+									<p>This is the panel body. Okay.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class = "panel panel-default">
+						<div class = "panel-heading">
+							<div class = "panel-title">
+								<a href = "#collapse-2" data-toggle = "collapse" data-parent = "#accordion">Question 2</a>
+							</div>
+							<div id = "collapse-2" class = "panel-collapse collapse">
+								<div class = "panel-body">
+									<p>This is the panel body. Okay.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class = "panel panel-default">
+						<div class = "panel-heading">
+							<div class = "panel-title">
+								<a href = "#collapse-3" data-toggle = "collapse" data-parent = "#accordion">Question 3</a>
+							</div>
+							<div id = "collapse-3" class = "panel-collapse collapse">
+								<div class = "panel-body">
+									<p>This is the panel body. Okay.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>        
+			</section>
+		</div>
+		
+		<div class = "container">
+			<section>
+				<div class = "page-header" id = "whoweare">
+					<h2>Who We Are</h2>
+				</div>
+			</section>
+		</div>
+		
+		<footer id = "support">
+			<div class = "well">
+				<div class = "container text-center">
+					<h3>Need help? Contact us!</h3>
+					<br>
+
+					<ul class = "list-inline">
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">YouTube</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
