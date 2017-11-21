@@ -1,0 +1,40 @@
+body 
+{
+    letter-spacing: .1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.well 
+{
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar-default 
+{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: all ease .5s;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus 
+{
+    color: #555;
+    background-color: transparent;
+}
+
+.jumbotron 
+{
+    height: 600px;
+    margin: 0px;
+    background-image: url(../img/web-banner-with-text.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
