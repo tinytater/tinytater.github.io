@@ -4,22 +4,24 @@
 	<head>
 		<meta charset = "utf-8">
 		<title>Tiny Tater Adventures</title>
-		<link rel = "icon" href = "favicon/favicon.ico">
 		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 		<meta author = "Team Pearodí">
+        
+        <link rel = "icon" href = "favicon/favicon.ico">
 		<link href = "https://fonts.googleapis.com/css?family=Raleway" rel = "stylesheet">
         <link href = "font-awesome/css/font-awesome.min.css" rel = "stylesheet">
-        <link href = "css/main.css" rel = "stylesheet">
 		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href = "css/main.css" rel = "stylesheet">
+        
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src = "js/custom.js"></script>
 	</head>
 	
-	<body>
+	<body style = "overflow-x: hidden;">
 		<!-- Navbar -->
-		<nav class = "navbar navbar-default">
+		<nav class = "navbar navbar-default navbar-fixed-top">
 			<div class = "container">
 				<div class = "navbar-header">
 					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapsable">
@@ -32,13 +34,13 @@
 				<div class = "collapse navbar-collapse navbar-collapsable">
 					<ul class = "nav navbar-nav navbar-right">
 						<li><a href = "#home" class="clickedHome">Home</a></li>
-						<li><a href = "#download" class="clickDownload">Download</a></li>
+                        <li><a href = "#download" class="clickedDownload">Download</a></li>
+                        <li><a href = "#reviews" class="clickedReviews">Reviews</a></li>
 						<li><a href = "#story" class="clickedStory">Story</a></li>
-						<li><a href = "#reviews" class="clickedReviews">Reviews</a></li>
 						<li><a href = "#features" class="clickedFeatures">Features</a></li>
 						<li><a href = "#faq" class="clickedFAQs">FAQs</a></li>
-						<li><a href = "#whoweare" class = "clickWhoWeAre">Who We Are</a></li>
-						<li><a href = "#support" class="clickedSupport">Support</a></li>
+						<li><a href = "#aboutus" class="clickedAboutUs">About Us</a></li>
+						<li><a href = "#contact" class="clickedContact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -46,22 +48,21 @@
 		
 		<div class = "jumbotron" id = "home"></div>
 		<hr>
-		
-		<div class = "container">
-			<section>
-				<div class = "page-header" id = "download">
-					<h2>How to Download</h2>
-				</div>
-				<div class = "row">
-					<h3>Coming Soon</h3>
-				</div>
-			</section>
-		</div>
-		<hr>
+        
+        <section id="download">
+            <div class = "row text-center">
+                <div class = "col-sm-12">  
+                    <br><br><br><br><br><br>
+                    <a href="" class="btn btn-lg btn-success">Download Here</a>
+                </div>
+            </div>
+        </section>
+        <hr>
 	
 		<div class = "container">
 			<section>
 				<div class = "page-header" id = "reviews">
+                    <br><br>
 					<h2>Reviews</h2>
 				</div>
 				<div class = "row">
@@ -91,16 +92,15 @@
 		<div class = "container">
 			<section>
 				<div class = "page-header" id = "story">
+                    <br><br>
 					<h2>Story</h2>
 				</div>
-				<div class = "row">
-					<div class = "col-sm-7">
+                <div class = "row col-xs-12">
+                    <img src = "img/family.png" class = "img-responsive" alt = "Story Family Image">
+				</div>
+				<div class = "row col-xs-12">
 						<h3>A Not So Spud-tacular Day...</h3>
 						<p>It’s a warm, beautiful day at Potato Patch. The daffodils are blooming bright in the field with a lush scent of lavender breezing by as spring is in the air. Tater Tots, the youngest in his family, is happily decorating the house with his siblings, while his parents prepare a big feast. It’s his birthday and he is excited to be celebrate with his family and friends. Nothing could go wrong. Except the ceiling begins to shake wildly. Decorations come crashing down. All the Tots are in a state of confusion and shock. An indistinct hand rips the ceiling from above and snatches away some of the Tots, including Tater. The Gardener grabs hold of Tater and his siblings, carrying them all to an unbeknownst location, the kitchen. The Gardener places the Tots on a counter, except for Tater. The Gardener grabs a cutting board and places Tater on the board . Tater, now afraid, is ready for his life to end. A loud ring from a phone in a separate location is heard. The Gardener walks away towards the noise, leaving Tater behind. Tater, now separated from his siblings and having to fend for his life, realizes this isn’t the end and that now is his time to escape!</p>
-					</div>
-					<div class = "col-sm-5">
-						<img src = "img/story.jpg" class = "img-responsive" alt = "Story Cutscene Image">
-					</div>
 				</div>
 			</section>
 		</div>
@@ -109,6 +109,7 @@
 		<div class = "container">
 			<section>
 				<div class = "page-header" id = "features">
+                    <br><br>
 					<h2>Features</h2>
 				</div>
 				<div class = "row">
@@ -147,6 +148,7 @@
 		<div class = "container">
 			<section>
 				<div class = "page-header" id = "faq">
+                    <br><br>
 					<h2>FAQs</h2>
 				</div>
 				<div class = "panel-group" id = "accordion">
@@ -218,7 +220,7 @@
 					<div class = "panel panel-default">
 						<div class = "panel-heading">
 							<div class = "panel-title">
-								<a href = "#collapse-6" data-toggle = "collapse" data-parent = "#accordion">What  is the main focus?</a>
+								<a href = "#collapse-6" data-toggle = "collapse" data-parent = "#accordion">What is the main focus?</a>
 							</div>
 							<div id = "collapse-6" class = "panel-collapse collapse">
 								<div class = "panel-body">
@@ -248,41 +250,67 @@
 		
 		<div class = "container">
 			<section>
-				<div class = "page-header" id = "whoweare">
-					<h2>Who We Are</h2>
+				<div class = "page-header" id = "aboutus">
+                    <br><br>
+					<h2>About Us - Team Pearodí</h2>
 				</div>
-				<div class = "row text-center">
-					<h3>Team Pearodí</h3>
-				</div>
-				<div class = "row">
-					<div class = "col-md-4 text-center">
-						<h3>Designers</h3>
-						<h5>Diana Sandil</h5>
-						<h5>Nathan Sou</h5>
-						<h5>Vivian Long</h5>
-					</div>
-					<div class = "col-md-4"></div>
-					<div class = "col-md-4 text-center">
-						<h3>Developers</h5>
-						<h5>Jeremy Yang</h5>
-						<h5>Rohan Chadha</h5>
-						<h5>Anuj Shah</h5>
-					</div>
-				</div>
+                <div class = "row">
+                    <p>Images coming soon!</p>
+                </div>
+                <div class = "row">
+                    <div class = "col-sm-6">
+                        <h3>Anuj Shah <small>- Developer</small></h3>
+                        <p>Sup mai boys! Name is Anuj Shah and I’m a fourth-year double major in Computer Science and Business Administration with an emphasis in Information Systems. I like to go bowling, watch basketball, and make responsive websites like this one. I see potential in Tiny Tater becoming the mascot of our company. GO POTATOES!</p>
+                        <br>
+                    </div>
+
+                    <div class = "col-sm-6">
+                        <h3>Diana Sandil <small>- Designer</small></h3>
+                        <p>Hi everyone! My name is Diana Sandil and I’m a senior at UCI studying Informatics with a specialization in Human-Computer Interaction. I enjoy watching anime and korean variety shows. I’m also a casual gamer who listens to K-Pop. I’m excited for the launch of this game because Tiny Tater is me in spirit since I have a “kawaii-potato-personality.” You have to play the game to get this reference, and I hope you guys enjoy it!</p>
+                        <br>
+                    </div>
+
+                    <div class = "col-sm-6">
+                        <h3>Jeremy Yang <small>- Developer</small></h3>
+                        <p>Hi everyone! My name is Jeremy Yang and I’m a fourth-year Computer Science major with an emphasis in Information and Intelligent Systems. I like to cook, play games with friends, as well as going on hikes. I’m excited about the release of this game because potatoes are life. French fries, tater tots, baked potatoes, and anything else potato!</p>
+                        <br>
+                    </div>
+
+                    <div class = "col-sm-6">
+                        <h3>Nathan Sou <small>- Designer</small></h3>
+                        <p>Hey there! I’m Nathan Sou, a fourth year Informatics major focusing on Organizations and Information Technology with a minor in Business Management. I like to play volleyball, basketball, video games and most importantly, hang out with friends. I love fries - McDonalds, In-N-Out, you name it! I’m so excited for this game because it features a freaking potato!</p>
+                        <br>
+                    </div>
+
+                    <div class = "col-sm-6">
+                        <h3>Rohan Chadha <small>- Developer</small></h3>
+                        <p>Bio Coming Soon</p>
+                        <br>
+                    </div>
+                    <div class = "col-sm-6">
+                        <h3>Vivian Long <small>- Designer</small></h3>
+                        <p>Bio Coming Soon</p>
+                        <br>
+                    </div>
+                </div>
 			</section>
 		</div>
-		<hr>
 		
-		<footer id = "support">
+		<footer id = "contact">
 			<div class = "well">
 				<div class = "container text-center">
-					<h3>Need help? Contact us!</h3>
+					<h2>Contact us!</h2>
 					<br>
-					<ul class = "list-inline">
-						<li><a href="https://www.facebook.com/tinytateradventures">Facebook</a></li>
-						<li><a href="https://twitter.com/tiniesttater">Twitter</a></li>
-						<li><a href="https://www.youtube.com/channel/UCk6GaKQqGrd5v4MyhgFhkmw">YouTube</a></li>
-					</ul>
+                    <div class = "row icons">
+                        <ul class = "list-inline">
+                            <li><a href="https://www.facebook.com/tinytateradventures"><i class="fa fa-facebook" aria-hidden="true" style="color:black"></i></a></li>
+                            <li><a href="https://twitter.com/tiniesttater"><i class="fa fa-twitter" aria-hidden="true" style="color:black"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCk6GaKQqGrd5v4MyhgFhkmw"><i class="fa fa-youtube" aria-hidden="true" style="color:black"></i></a></li>
+                        </ul>
+                    </div>
+                    <h5>©2017 Team Pearodí. All rights reserved.</h5>
+                    <h5>All trademarks referenced herein are the properties of their respective owners.</h5>
+                    <br>
 				</div>
 			</div>
 		</footer>
