@@ -6,9 +6,14 @@ $(document).ready(function() {
     	   scrollTop: $("#home").offset().top}, 800);
     });
 	
-	$('.clickedDownload').click(function() {
+    $('.clickedDownload').click(function() {
         $('html,body').animate({
     	   scrollTop: $("#download").offset().top}, 800);
+    });
+    
+	$('.clickedReviews').click(function() {
+        $('html,body').animate({
+    	   scrollTop: $("#reviews").offset().top}, 800);
     });
     
     $('.clickedStory').click(function() {
@@ -26,13 +31,13 @@ $(document).ready(function() {
     	   scrollTop: $("#faq").offset().top}, 800);
     })
 	
-	$('.clickedWhoWeAre').click(function() {
+	$('.clickedAboutUs').click(function() {
         $('html,body').animate({
-    	   scrollTop: $("#whoweare").offset().top}, 800);
+    	   scrollTop: $("#aboutus").offset().top}, 800);
     });
     
-    $('.clickedSupport').click(function() {
+    $('.clickedContact').click(function() {
         $('html,body').animate({
-    	   scrollTop: $("#support").offset().top}, 800);
+    	   scrollTop: $("#contact").offset().top}, 800);
     })
 });

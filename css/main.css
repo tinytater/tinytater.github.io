@@ -38,3 +38,17 @@ body
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.icons {
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.page-header {
+    border-bottom: none;
+    margin: 0px;
+}
+
+#download {
+    margin-bottom: 150px;
+}
