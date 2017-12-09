@@ -17,6 +17,7 @@ body
     font-size: 16px;
     font-weight: 300;
     font-family: sans-serif;
+    background-color: #D9E0B1;
     text-transform: uppercase;
     transition: all ease .5s;
 }
@@ -29,16 +30,6 @@ body
     background-color: transparent;
 }
 
-.jumbotron 
-{
-    height: 600px;
-    margin: 0px;
-    background-image: url(../img/web-banner-with-text.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .icons {
     font-size: 3em;
     text-decoration: none;
@@ -49,6 +40,32 @@ body
     margin: 0px;
 }
 
-#download {
-    margin-bottom: 150px;
+#home {
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+
+#play {
+    background-color: #D9E0B1;
+}
+
+#reviews {
+    background-color: #D9E0B1;
+}
+
+.panel-default {
+    background-color: #D9E0B1;
+}
+
+.well {
+    background-color: #D9E0B1;
+}
+
+.icons ul li {
+    margin: 20px;
+}
+
+.btn-lg {
+    min-width: 250px;
+    min-height: 170px;
 }

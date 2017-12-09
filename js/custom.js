@@ -6,25 +6,15 @@ $(document).ready(function() {
     	   scrollTop: $("#home").offset().top}, 800);
     });
 	
-    $('.clickedDownload').click(function() {
+    $('.clickedPlay').click(function() {
         $('html,body').animate({
-    	   scrollTop: $("#download").offset().top}, 800);
-    });
-    
-	$('.clickedReviews').click(function() {
-        $('html,body').animate({
-    	   scrollTop: $("#reviews").offset().top}, 800);
+    	   scrollTop: $("#play").offset().top}, 800);
     });
     
     $('.clickedStory').click(function() {
         $('html,body').animate({
     	   scrollTop: $("#story").offset().top}, 800);
     });
-    
-    $('.clickedFeatures').click(function() {
-        $('html,body').animate({
-    	   scrollTop: $("#features").offset().top}, 800);
-    })
     
     $('.clickedFAQs').click(function() {
         $('html,body').animate({
