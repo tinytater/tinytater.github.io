@@ -17,11 +17,9 @@ body
     font-size: 16px;
     font-weight: 300;
     font-family: sans-serif;
-    background-color: #D9E0B1;
     text-transform: uppercase;
     transition: all ease .5s;
 }
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus 
@@ -30,42 +28,51 @@ body
     background-color: transparent;
 }
 
-.icons {
+.icons 
+{
     font-size: 3em;
     text-decoration: none;
 }
 
-.page-header {
+.page-header 
+{
     border-bottom: none;
     margin: 0px;
 }
 
-#home {
+#home 
+{
     padding-top: 70px;
     padding-bottom: 25px;
 }
 
-#play {
+#play 
+{
     background-color: #D9E0B1;
 }
 
-#reviews {
+#reviews 
+{
     background-color: #D9E0B1;
 }
 
-.panel-default {
+.panel-default 
+{
     background-color: #D9E0B1;
 }
 
-.well {
+.well 
+{
     background-color: #D9E0B1;
 }
 
-.icons ul li {
+.icons ul li 
+{
     margin: 20px;
 }
 
-.btn-lg {
+.btn-lg 
+{
     min-width: 250px;
     min-height: 170px;
 }
